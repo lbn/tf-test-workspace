@@ -1,6 +1,6 @@
-module "tester" {
-	source  = "40c81b508ad7.test-env.scalr.com/env-svrcnchebt61e30/tester/null"
-	version = "3.0.0"
-
-	name = "Scalr"
+resource null_resource cluster {
+	count = 10
+	provisioner "local-exec" {
+		command = "echo hello ${count.index}"
+	}
 }
