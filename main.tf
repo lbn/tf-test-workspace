@@ -4,3 +4,8 @@ resource null_resource cluster {
 		command = "echo hello ${count.index}"
 	}
 }
+
+
+variable test {
+	default = "test"
+}
