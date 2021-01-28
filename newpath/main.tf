@@ -1,5 +1,5 @@
 resource null_resource cluster {
-	count = 6
+	count = 7
 	provisioner "local-exec" {
 		command = "echo hello ${count.index}!"
 	}
